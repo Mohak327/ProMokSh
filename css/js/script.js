@@ -6,14 +6,34 @@ $(".carousel").carousel({
   interval: 3000,
 });
 
-$(document).ready(function () {
-  // Transition effect for navbar
-  $(window).scroll(function () {
-    // checks if window is scrolled more than 500px, adds/removes solid class
-    if ($(this).scrollTop() > 500) {
-      $(".navbar").addClass("solid");
-    } else {
-      $(".navbar").removeClass("solid");
-    }
-  });
-});
+
+<script type="text/javascript">
+      $(function () {
+        $("#login").click(function () {
+          $("#loginModal").modal("show");
+        });
+
+        $("#reserve").click(function () {
+          $("#reservation").modal("show");
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $("#mycarousel").carousel({ interval: 2000 });
+        $("#carouselButton").click(function () {
+          if ($("#carouselButton").children("span").hasClass("fa-pause")) {
+            $("#mycarousel").carousel("pause");
+            $("#carouselButton").children("span").removeClass("fa-pause");
+            $("#carouselButton").children("span").addClass("fa-play");
+          } else if (
+            $("#carouselButton").children("span").hasClass("fa-play")
+          ) {
+            $("#mycarousel").carousel("cycle");
+            $("#carouselButton").children("span").removeClass("fa-play");
+            $("#carouselButton").children("span").addClass("fa-pause");
+          }
+        });
+      });
+    </script>

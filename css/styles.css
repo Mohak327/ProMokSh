@@ -15,20 +15,25 @@ header,
   color: white;
 }
 
+.modal-header {
+  background: #512da8;
+}
+.modal-header .modal-title {
+  color: white;
+}
+.modal-header .close {
+  color: floralwhite;
+}
+
+.modal-body {
+  background: #d1c4e9;
+}
+
 .navbar-dark {
   background-color: rgb(20, 21, 84);
 }
 
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background-color: rgb(20, 21, 84);
-  }
-}
-@media (min-width: 800px) and (max-width: 850px) {
-  .navbar:not(.top-nav-collapse) {
-    background-color: rgb(20, 21, 84);
-  }
-}
+/*  */
 
 #readmore {
   text-decoration: none;
