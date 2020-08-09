@@ -16,6 +16,11 @@ $(".carousel").carousel({
         $("#reserve").click(function () {
           $("#reservation").modal("show");
         });
+
+        $("#signup-btn").click(function () {
+          $("#loginModal").modal("hide");
+          $("#signup").modal("show");
+        });
       });
     </script>
 
