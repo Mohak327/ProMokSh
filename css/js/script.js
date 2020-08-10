@@ -2,10 +2,12 @@
 new WOW().init();
 // Carousel options
 
-// Material Select Initialization for choosing country
-// $(document).ready(function() {
-//   $('.mdb-select').materialSelect();
-//   });
+$('.modal-content').resizable({
+  //alsoResize: ".modal-dialog",
+  minHeight: 300,
+  minWidth: 300
+});
+
 
 $(".carousel").carousel({
   interval: 3000,

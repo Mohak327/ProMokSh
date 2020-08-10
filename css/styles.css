@@ -26,7 +26,11 @@ header,
 }
 
 .modal-body {
-  background: rgb(73, 97, 162);
+  background: rgb(127, 152, 221);
+}
+
+.modal-dialog {
+  height: 70vh;
 }
 
 .navbar-dark {
@@ -46,7 +50,33 @@ footer {
 }
 
 footer .primary-color {
-  background-color: rgb(73, 97, 162);
+  background-color: rgb(127, 152, 221);
+}
+
+.links {
+  text-align: left;
+  text-decoration: none;
+  color: white;
+}
+
+.vision {
+  text-align: center;
+}
+
+.contact-details {
+  text-align: right;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.tel,
+.mail,
+.fax {
+  text-decoration: none;
+  color: white;
 }
 
 #reserve {

@@ -8,6 +8,15 @@
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <!--This file is causing the navbar collapse to fail-->
+    <!-- <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script> -->
+
+    <script src="/js/script.js"></script>
+
+    <!-- <script src="MDB-UI-KIT-Free-1.0.0-beta1/js/mdb.min.js">
+    </script> -->
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -24,13 +33,14 @@
     />
 
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="MDB-UI-KIT-Free-1.0.0-beta1/css/mdb.min.css">
     <title>MokSh: Inkin' Blue</title>
   </head>
 
   <body>
     
     <!--Main Navigation-->
-    <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+      <nav class="navbar navbar-dark navbar-expand-md fixed-top">
         <div class="container">
           <button
             class="navbar-toggler"
@@ -90,8 +100,8 @@
         </div>
       </nav>
 
-      <div id="loginModal" class="modal fade" role="dialog">
-        <!--Custom login/signup, non responsive-->
+      <!-- <div style="display:none"></div> -->
+              <!--Custom login/signup, non responsive-->
         <!-- <br>
         <div class="row">
             <div class="col-md-6 mx-auto p-0">
@@ -125,6 +135,11 @@
                 </div>
             </div>
         </div> -->
+
+      <header id="intro">
+      </header>
+
+      <div id="loginModal" class="modal fade" role="dialog">
 
         <div class="modal-dialog modal-lg" role="content">
           <div class="modal-content">
@@ -245,10 +260,10 @@
                   </div>
 
                   <div class="form-group row">
-                    <label class="col-12 col-md-3 col-form-label"
+                    <label class="col-3 col-form-label"
                       ><strong>Age</strong>
                     </label>
-                    <div class="col-6 col-md-4">
+                    <div class="col-9 col-md-8">
                       <input
                         
                         class="form-control"
@@ -261,25 +276,27 @@
                   </div>
 
                   <div class="form-group row">
-                    <label for="sel1" class="col-12 col-md-3 col-form-label"
+                    <label for="sel1" class="col-3 col-form-label"
                       ><strong>Country</strong>
                     </label>
-                    <div class="col-12 col-md-8 ">
+                    <div class="col-9 col-md-8">
                     <select class="form-control" id="sel1">
+                      <option>Select one of the following</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
                       <option>4</option>
+                      <option>Others</option>
                     </select>
                   </div>
                   </div>
 
                   <div class="form-group row">
-                    <label class="col-12 col-md-3 col-form-label"
+                    <label class="col-3 col-form-label"
                       ><strong>Gender</strong>
                     </label>
                     
-                    <div class="col-12 offset-md-3">
+                    <div class="col-8 offset-3">
                       <div
                         class="btn-group btn-group-toggle"
                         data-toggle="buttons"
@@ -359,11 +376,13 @@
   
                   <div class="form-group row">
                     <div class="offset-md-3 col-md-10">
-                      <button class="btn btn-secondary">
-                        <a href="index.html">
-                          Cancel
-                        </a>
-                      </button>
+                      <button
+                      type="button"
+                      class="btn btn-secondary ml-auto"
+                      data-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
                       <button type="submit" class="btn btn-success">
                         Sign Up
                       </button>
@@ -374,7 +393,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> 
 
       <div id="reservation" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
@@ -549,580 +568,552 @@
           </div>
         </div>
       </div>
+  
+      <main class="mt-5">
+          <div class="container">
 
-      <header id="intro">
-        
-      </header>
+              <!--Section: Best Features-->
+              <section id="best-features" class="text-center">
 
-    <!--Main layout-->
-    <main class="mt-5">
-        <div class="container">
+                  <!-- Heading -->
+                  <h2 class="mb-5 font-weight-bold">Best Features</h2>
 
-            <!--Section: Best Features-->
-            <section id="best-features" class="text-center">
+                  <!--Grid row-->
+                  <div class="row d-flex justify-content-center mb-4">
 
-                <!-- Heading -->
-                <h2 class="mb-5 font-weight-bold">Best Features</h2>
+                      <!--Grid column-->
+                      <div class="col-md-8">
 
-                <!--Grid row-->
-                <div class="row d-flex justify-content-center mb-4">
+                          <!-- Description -->
+                          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate
+                              hic
+                              provident nulla repellat
+                              facere esse molestiae ipsa labore porro minima quam quaerat rem, natus repudiandae debitis
+                              est
+                              sit pariatur.</p>
 
-                    <!--Grid column-->
-                    <div class="col-md-8">
+                      </div>
+                      <!--Grid column-->
 
-                        <!-- Description -->
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate
-                            hic
-                            provident nulla repellat
-                            facere esse molestiae ipsa labore porro minima quam quaerat rem, natus repudiandae debitis
-                            est
-                            sit pariatur.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-5">
-                        <i class="fa fa-camera-retro fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Experience</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                            maiores nam,
-                            aperiam minima
-                            assumenda deleniti hic.</p>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-heart fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Happiness</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                            maiores nam,
-                            aperiam minima
-                            assumenda deleniti hic.</p>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-bicycle fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Adventure</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                            maiores nam,
-                            aperiam minima
-                            assumenda deleniti hic.</p>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-            </section>
-            <!--Section: Best Features-->
-
-            <hr class="my-5">
-
-            <!--Section: Examples-->
-            <section id="examples" class="text-center">
-
-                <!-- Heading -->
-                <h2 class="mb-5 font-weight-bold">Stunning Examples</h2>
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-12 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                            maiores nam,
-                            aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                            maiores nam,
-                            aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/29.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                            maiores nam,
-                            aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-12 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/10.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                            maiores nam,
-                            aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/11.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                            maiores nam,
-                            aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/13.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                            maiores nam,
-                            aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-            </section>
-            <!--Section: Examples-->
-
-            <hr class="my-5">
-
-            <!--Section: Gallery-->
-            <section id="gallery">
-
-                <!-- Heading -->
-                <h2 class="mb-5 font-weight-bold text-center">Gallery heading</h2>
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12 mb-4">
-
-                        <!--Carousel Wrapper-->
-                        <div id="carousel-example-1z" class="carousel slide carousel-fade carousel-fade" data-ride="carousel">
-                            <!--Indicators-->
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-                            </ol>
-                            <!--/.Indicators-->
-                            <!--Slides-->
-                            <div class="carousel-inner z-depth-1-half" role="listbox">
-                                <!--First slide-->
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
-                                        alt="First slide">
-                                </div>
-                                <!--/First slide-->
-                                <!--Second slide-->
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
-                                        alt="Second slide">
-                                </div>
-                                <!--/Second slide-->
-                                <!--Third slide-->
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
-                                        alt="Third slide">
-                                </div>
-                                <!--/Third slide-->
-                            </div>
-                            <!--/.Slides-->
-                            <!--Controls-->
-                            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                            <!--/.Controls-->
-                        </div>
-                        <!--/.Carousel Wrapper-->
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md">
-
-                        <!--Excerpt-->
-                        <a href="" class="teal-text">
-                            <h6 class="pb-1"><i class="fa fa-heart"></i><strong> Lifestyle </strong></h6>
-                        </a>
-                        <h4 class="mb-3"><strong>This is title of the news</strong></h4>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
-                            quod maxime
-                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut
-                            officiis
-                            debitis aut rerum.</p>
-
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
-                            quod maxime
-                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut
-                            officiis
-                            debitis aut rerum.</p>
-                        <p>by <a><strong>Jessica Clark</strong></a>, 26/08/2016</p>
-                        <a id="readmore" class="btn btn-primary btn-md">Read more</a>
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-            </section>
-            <!--Section: Gallery-->
-
-            <hr class="my-5">
-
-            <!--Section: Contact-->
-            <section id="contact">
-                <div class="col-12">
-                    <h2 class="mb-5 font-weight-bold text-center">Contact us</h2>
                   </div>
-                  <div class="col-12 col-md-9">
-                    <form>
-                      <div class="form-group row">
-                        <label for="firstname" class="col-md-2 col-form-label"
-                          >First Name
-                        </label>
-                        <div class="col-md-10">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="firstname"
-                            name="firstname"
-                            placeholder="First Name"
-                          />
-                        </div>
+                  <!--Grid row-->
+
+                  <!--Grid row-->
+                  <div class="row">
+
+                      <!--Grid column-->
+                      <div class="col-md-4 mb-5">
+                          <i class="fa fa-camera-retro fa-4x orange-text"></i>
+                          <h4 class="my-4 font-weight-bold">Experience</h4>
+                          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                              maiores nam,
+                              aperiam minima
+                              assumenda deleniti hic.</p>
                       </div>
-          
-                      <div class="form-group row">
-                        <label for="lastname" class="col-md-2 col-form-label"
-                          >Last Name
-                        </label>
-                        <div class="col-md-10">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="lastname"
-                            name="lastname"
-                            placeholder="Last Name"
-                          />
-                        </div>
+                      <!--Grid column-->
+
+                      <!--Grid column-->
+                      <div class="col-md-4 mb-1">
+                          <i class="fa fa-heart fa-4x orange-text"></i>
+                          <h4 class="my-4 font-weight-bold">Happiness</h4>
+                          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                              maiores nam,
+                              aperiam minima
+                              assumenda deleniti hic.</p>
                       </div>
-          
-                      <div class="form-group row">
-                        <label for="telnum" class="col-12 col-md-2 col-form-label"
-                          >Contact No.
-                        </label>
-                        <div class="col-5 col-md-3">
-                          <input
-                            type="tel"
-                            class="form-control"
-                            id="areacode"
-                            name="area code"
-                            placeholder="Area Code"
-                          />
-                        </div>
-                        <div class="col-7 col-md-7">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="telnum"
-                            name="telnum"
-                            placeholder="Tel. number"
-                          />
-                        </div>
+                      <!--Grid column-->
+
+                      <!--Grid column-->
+                      <div class="col-md-4 mb-1">
+                          <i class="fa fa-bicycle fa-4x orange-text"></i>
+                          <h4 class="my-4 font-weight-bold">Adventure</h4>
+                          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                              maiores nam,
+                              aperiam minima
+                              assumenda deleniti hic.</p>
                       </div>
-          
-                      <div class="form-group row">
-                        <label for="emailid" class="col-md-2 col-form-label"
-                          >Email
-                        </label>
-                        <div class="col-md-10">
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="emailid"
-                            name="emailid"
-                            placeholder="Email"
-                          />
-                        </div>
-                        </div>
-          
-                        <div class="form-group row">
-                          <div class="col-md-6 offset-md-2">
-                              <div class="form-check">
-                                  <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
-                                  <label class="form-check-label" for="approve">
-                                      <strong>May we contact you?</strong>
-                                  </label>
+                      <!--Grid column-->
+
+                  </div>
+                  <!--Grid row-->
+
+              </section>
+              <!--Section: Best Features-->
+
+              <hr class="my-5">
+
+              <!--Section: Examples-->
+              <section id="examples" class="text-center">
+
+                  <!-- Heading -->
+                  <h2 class="mb-5 font-weight-bold">Stunning Examples</h2>
+
+                  <!--Grid row-->
+                  <div class="row">
+
+                      <!--Grid column-->
+                      <div class="col-lg-4 col-md-12 mb-4">
+
+                          <div class="view overlay z-depth-1-half">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" class="img-fluid" alt="">
+                              <div class="mask rgba-white-slight"></div>
+                          </div>
+
+                          <h4 class="my-4 font-weight-bold">Heading</h4>
+                          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                              maiores nam,
+                              aperiam minima
+                              assumenda deleniti hic.</p>
+
+                      </div>
+                      <!--Grid column-->
+
+                      <!--Grid column-->
+                      <div class="col-lg-4 col-md-6 mb-4">
+
+                          <div class="view overlay z-depth-1-half">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="img-fluid" alt="">
+                              <div class="mask rgba-white-slight"></div>
+                          </div>
+
+                          <h4 class="my-4 font-weight-bold">Heading</h4>
+                          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                              maiores nam,
+                              aperiam minima
+                              assumenda deleniti hic.</p>
+
+                      </div>
+                      <!--Grid column-->
+
+                      <!--Grid column-->
+                      <div class="col-lg-4 col-md-6 mb-4">
+
+                          <div class="view overlay z-depth-1-half">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/images/29.jpg" class="img-fluid" alt="">
+                              <div class="mask rgba-white-slight"></div>
+                          </div>
+
+                          <h4 class="my-4 font-weight-bold">Heading</h4>
+                          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                              maiores nam,
+                              aperiam minima
+                              assumenda deleniti hic.</p>
+
+                      </div>
+                      <!--Grid column-->
+
+                  </div>
+                  <!--Grid row-->
+
+                  <!--Grid row-->
+                  <div class="row">
+
+                      <!--Grid column-->
+                      <div class="col-lg-4 col-md-12 mb-4">
+
+                          <div class="view overlay z-depth-1-half">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/images/10.jpg" class="img-fluid" alt="">
+                              <div class="mask rgba-white-slight"></div>
+                          </div>
+
+                          <h4 class="my-4 font-weight-bold">Heading</h4>
+                          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                              maiores nam,
+                              aperiam minima
+                              assumenda deleniti hic.</p>
+
+                      </div>
+                      <!--Grid column-->
+
+                      <!--Grid column-->
+                      <div class="col-lg-4 col-md-6 mb-4">
+
+                          <div class="view overlay z-depth-1-half">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/images/11.jpg" class="img-fluid" alt="">
+                              <div class="mask rgba-white-slight"></div>
+                          </div>
+
+                          <h4 class="my-4 font-weight-bold">Heading</h4>
+                          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                              maiores nam,
+                              aperiam minima
+                              assumenda deleniti hic.</p>
+
+                      </div>
+                      <!--Grid column-->
+
+                      <!--Grid column-->
+                      <div class="col-lg-4 col-md-6 mb-4">
+
+                          <div class="view overlay z-depth-1-half">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/images/13.jpg" class="img-fluid" alt="">
+                              <div class="mask rgba-white-slight"></div>
+                          </div>
+
+                          <h4 class="my-4 font-weight-bold">Heading</h4>
+                          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                              maiores nam,
+                              aperiam minima
+                              assumenda deleniti hic.</p>
+
+                      </div>
+                      <!--Grid column-->
+
+                  </div>
+                  <!--Grid row-->
+
+              </section>
+              <!--Section: Examples-->
+
+              <hr class="my-5">
+
+              <!--Section: Gallery-->
+              <section id="gallery">
+
+                  <!-- Heading -->
+                  <h2 class="mb-5 font-weight-bold text-center">Gallery heading</h2>
+
+                  <!--Grid row-->
+                  <div class="row">
+
+                      <!--Grid column-->
+                      <div class="col-md-12 mb-4">
+
+                          <!--Carousel Wrapper-->
+                          <div id="carousel-example-1z" class="carousel slide carousel-fade carousel-fade" data-ride="carousel">
+                              <!--Indicators-->
+                              <ol class="carousel-indicators">
+                                  <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                                  <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+                              </ol>
+                              <!--/.Indicators-->
+                              <!--Slides-->
+                              <div class="carousel-inner z-depth-1-half" role="listbox">
+                                  <!--First slide-->
+                                  <div class="carousel-item active">
+                                      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+                                          alt="First slide">
+                                  </div>
+                                  <!--/First slide-->
+                                  <!--Second slide-->
+                                  <div class="carousel-item">
+                                      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+                                          alt="Second slide">
+                                  </div>
+                                  <!--/Second slide-->
+                                  <!--Third slide-->
+                                  <div class="carousel-item">
+                                      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+                                          alt="Third slide">
+                                  </div>
+                                  <!--/Third slide-->
                               </div>
+                              <!--/.Slides-->
+                              <!--Controls-->
+                              <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                              </a>
+                              <!--/.Controls-->
                           </div>
-                          <div class="col-md-3 offset-md-1">
-                              <select class="form-control">
-                                  <option>Tel.</option>
-                                  <option>Email</option>
-                              </select>
-                          </div>
+                          <!--/.Carousel Wrapper-->
+
                       </div>
-          
-                      <div class="form-group row">
-                          <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
-                          <div class="col-md-10">
-                              <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
-                          </div>
+                      <!--Grid column-->
+
+                      <!--Grid column-->
+                      <div class="col-md">
+
+                          <!--Excerpt-->
+                          <a href="" class="teal-text">
+                              <h6 class="pb-1"><i class="fa fa-heart"></i><strong> Lifestyle </strong></h6>
+                          </a>
+                          <h4 class="mb-3"><strong>This is title of the news</strong></h4>
+                          <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                              quod maxime
+                              placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut
+                              officiis
+                              debitis aut rerum.</p>
+
+                          <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                              quod maxime
+                              placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut
+                              officiis
+                              debitis aut rerum.</p>
+                          <p>by <a><strong>Jessica Clark</strong></a>, 26/08/2016</p>
+                          <a id="readmore" class="btn btn-primary btn-md">Read more</a>
+
                       </div>
-          
-                      <div class="form-group row">
-                          <div class="offset-md-2 col-md-10">
-                              <button type="submit" class="btn btn-primary">Send Feedback</button>
-                          </div>
-                      </div>
-                        </form>
-                    </form>
+                      <!--Grid column-->
+
                   </div>
-                  <div class="col-12 col-md"></div>
-                
-            </section>
-                <!--Section: Contact-->
+                  <!--Grid row-->
 
-            <hr class="my-5">
+              </section>
+              <!--Section: Gallery-->
 
-        </div>
-    </main>
-    <!--Main layout-->
+              <hr class="my-5">
 
-    <!-- Footer -->
-    <footer class="page-footer font-small unique-color-dark">
-
-        <!-- Social buttons -->
-        <div class="primary-color">
-            <div class="container">
-                <!--Grid row-->
-                <div class="row py-4 d-flex align-items-center">
-
-                    <!--Grid column-->
-                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                        <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+              <!--Section: Contact-->
+              <section id="contact">
+                  <div class="col-12">
+                      <h2 class="mb-5 font-weight-bold text-center">Contact us</h2>
                     </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6 col-lg-7 text-center text-md-right">
-                        <!--Facebook-->
-                        <a
-                class="btn btn-social-icon btn-google"
-                href="http://google.com/+"
-                target="blank"
-                ><i class="fa fa-google-plus fa-lg"></i
-              ></a>
-
-              <a
-                class="btn btn-social-icon btn-facebook"
-                href="http://www.facebook.com/profile.php?id="
-                target="blank"
-                ><i class="fa fa-facebook fa-lg"></i
-              ></a>
-              <a
-                class="btn btn-social-icon btn-linkedin"
-                href="http://www.linkedin.com/in/"
-                target="blank"
-                ><i class="fa fa-linkedin fa-lg"></i
-              ></a>
-
-              <a
-                class="btn btn-social-icon btn-twitter"
-                href="http://twitter.com/"
-                target="blank"
-                ><i class="fa fa-twitter fa-lg"></i
-              ></a>
-
-              <a
-                class="btn btn-social-icon btn-google"
-                href="http://youtube.com/"
-                target="blank"
-                ><i class="fa fa-youtube fa-lg"></i
-              ></a>
-
-              <a class="btn btn-social-icon" href="mailto:" target="blank"
-                ><i class="fa fa-envelope-o fa-lg"></i
-              ></a>
+                    <div class="col-12 col-md-9">
+                      <form>
+                        <div class="form-group row">
+                          <label for="firstname" class="col-md-2 col-form-label"
+                            >First Name
+                          </label>
+                          <div class="col-md-10">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="firstname"
+                              name="firstname"
+                              placeholder="First Name"
+                            />
+                          </div>
+                        </div>
+            
+                        <div class="form-group row">
+                          <label for="lastname" class="col-md-2 col-form-label"
+                            >Last Name
+                          </label>
+                          <div class="col-md-10">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="lastname"
+                              name="lastname"
+                              placeholder="Last Name"
+                            />
+                          </div>
+                        </div>
+            
+                        <div class="form-group row">
+                          <label for="telnum" class="col-12 col-md-2 col-form-label"
+                            >Contact No.
+                          </label>
+                          <div class="col-5 col-md-3">
+                            <input
+                              type="tel"
+                              class="form-control"
+                              id="areacode"
+                              name="area code"
+                              placeholder="Area Code"
+                            />
+                          </div>
+                          <div class="col-7 col-md-7">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="telnum"
+                              name="telnum"
+                              placeholder="Tel. number"
+                            />
+                          </div>
+                        </div>
+            
+                        <div class="form-group row">
+                          <label for="emailid" class="col-md-2 col-form-label"
+                            >Email
+                          </label>
+                          <div class="col-md-10">
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="emailid"
+                              name="emailid"
+                              placeholder="Email"
+                            />
+                          </div>
+                          </div>
+            
+                          <div class="form-group row">
+                            <div class="col-md-6 offset-md-2">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                    <label class="form-check-label" for="approve">
+                                        <strong>May we contact you?</strong>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 offset-md-1">
+                                <select class="form-control">
+                                    <option>Tel.</option>
+                                    <option>Email</option>
+                                </select>
+                            </div>
+                        </div>
+            
+                        <div class="form-group row">
+                            <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                            </div>
+                        </div>
+            
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">Send Feedback</button>
+                            </div>
+                        </div>
+                          </form>
+                      </form>
                     </div>
-                    <!--Grid column-->
+                    <div class="col-12 col-md"></div>
+                  
+              </section>
+                  <!--Section: Contact-->
 
-                </div>
-                <!--Grid row-->
-            </div>
-        </div>
-        <!-- Social buttons -->
+              <hr class="my-5">
 
-        <!--Footer Links-->
-        <div class="container mt-5 mb-4 text-center text-md-left">
-            <div class="row mt-3">
+          </div>
+      </main>
+
+      <footer class="page-footer font-small unique-color-dark">
+
+          <!-- Social buttons -->
+          <div class="primary-color">
+              <div class="container">
+                  <!--Grid row-->
+                  <div class="row py-4 d-flex align-items-center">
+
+                      <!--Grid column-->
+                      <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                          <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                      </div>
+                      <!--Grid column-->
+
+                      <!--Grid column-->
+                      <div class="col-md-6 col-lg-7 text-center text-md-right">
+                          <!--Facebook-->
+                          <a
+                  class="btn btn-social-icon btn-google"
+                  href="http://google.com/+"
+                  target="blank"
+                  ><i class="fa fa-google-plus fa-lg"></i
+                ></a>
+
+                <a
+                  class="btn btn-social-icon btn-facebook"
+                  href="http://www.facebook.com/profile.php?id="
+                  target="blank"
+                  ><i class="fa fa-facebook fa-lg"></i
+                ></a>
+                <a
+                  class="btn btn-social-icon btn-linkedin"
+                  href="http://www.linkedin.com/in/"
+                  target="blank"
+                  ><i class="fa fa-linkedin fa-lg"></i
+                ></a>
+
+                <a
+                  class="btn btn-social-icon btn-twitter"
+                  href="http://twitter.com/"
+                  target="blank"
+                  ><i class="fa fa-twitter fa-lg"></i
+                ></a>
+
+                <a
+                  class="btn btn-social-icon btn-google"
+                  href="http://youtube.com/"
+                  target="blank"
+                  ><i class="fa fa-youtube fa-lg"></i
+                ></a>
+
+                <a class="btn btn-social-icon" href="mailto:" target="blank"
+                  ><i class="fa fa-envelope-o fa-lg"></i
+                ></a>
+                      </div>
+                      <!--Grid column-->
+
+                  </div>
+                  <!--Grid row-->
+              </div>
+          </div>
+          <!-- Social buttons -->
+
+          <!--Footer Links-->
+          <div class="container mt-5 mb-4 text-center text-md-left">
+              <div class="row mt-3">
 
                 <!--First column-->
-                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Vision</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>Cheers to all those who found their way here! We hope you find all the love and support you deserve. <br><br><strong>✒ VENI VIDI VICI ✒</strong></p>
-                </div>
-                <!--/.First column-->
+                <div class="links col-4 mx-auto mb-4">
+                  <h6 class="text-uppercase font-weight-bold">
+                      <strong>Useful links</strong>
+                  </h6>
+                  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                  <p>
+                      <a class="link" href="#!">Your Account</a>
+                  </p>
+                  <p>
+                      <a class="link" href="#!">About Us</a>
+                  </p>
+                  <p>
+                      <a class="link" href="#!">Gallery</a>
+                  </p>
+                  <p>
+                      <a class="link" href="#!">Contact Us</a>
+                  </p>
+                  <p>
+                      <a class="link" href="#!">Help</a>
+                  </p>
+              </div>
+              <!--/.First column-->
 
-                <!--Second column-->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Products</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a href="#!">MDBootstrap</a>
-                    </p>
-                    <p>
-                        <a href="#!">MDWordPress</a>
-                    </p>
-                    <p>
-                        <a href="#!">BrandFlow</a>
-                    </p>
-                    <p>
-                        <a href="#!">Bootstrap Angular</a>
-                    </p>
-                </div>
-                <!--/.Second column-->
+                  <!--Second column-->
+                  <div class="vision col-4 mb-4">
+                      <h6 class="text-uppercase font-weight-bold">
+                          <strong>Vision</strong>
+                      </h6>
+                      <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                      <p>Cheers to all those who found their way here! We hope you find all the love and support you deserve. <br><br><strong>✒ VENI VIDI VICI ✒</strong></p>
+                  </div>
+                  <!--/.Second column-->
 
-                <!--Third column-->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!--Third column-->
+                  <div class="contact-details col-4 mb-4">
                     <h6 class="text-uppercase font-weight-bold">
-                        <strong>Useful links</strong>
+                        <strong>contact us</strong>
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a href="#!">Your Account</a>
-                    </p>
-                    <p>
-                        <a href="#!">About Us</a>
-                    </p>
-                    <p>
-                        <a href="#!">Gallery</a>
-                    </p>
-                    <p>
-                        <a href="#!">Contact Us</a>
-                    </p>
-                    <p>
-                        <a href="#!">Help</a>
+                      <a class="mail" href="mailto:mohak327@gmail.com">
+                      <i class="fa fa-envelope mr-3"></i>Mail Us</a><br>
+                      <a class="tel" href="tel:01 234 567 89">
+                          <i class="fa fa-phone mr-3"></i> +012-3456-788</a><br>
+                  <a>
+                    <a class="fax" href="fax:012 3456 789">
+                      <i class="fa fa-print mr-3"></i> +012-3456-789</a>
                     </p>
                 </div>
                 <!--/.Third column-->
 
-                <!--Fourth column-->
-                <div class="col-md-4 col-lg-3 col-xl-3">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Contact</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <i class="fas fa-home"></i></i> New York, NY 10012, US</p>
-                    <p>
-                        <i class="fa fa-envelope mr-3"></i> info@example.com</p>
-                    <p>
-                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
-                    <p>
-                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
-                </div>
-                <!--/.Fourth column-->
+              </div>
+          </div>
+          <!--/.Footer Links-->
 
-            </div>
-        </div>
-        <!--/.Footer Links-->
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">© 2020 Copyright:
+              <a href="#"> i.am.moksh</a>
+          </div>
+          <!-- Copyright -->
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="#"> i.am.moksh</a>
-        </div>
-        <!-- Copyright -->
+      </footer>
+    
 
-    </footer>
-    <!-- Footer -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/js/script.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+    
   </body>
 
 </html>
