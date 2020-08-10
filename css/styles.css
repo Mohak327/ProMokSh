@@ -16,6 +16,14 @@ header,
   color: white;
 }
 
+.logo img {
+  max-width: 100%;
+}
+
+.icon img {
+  max-height: 40vh;
+}
+
 .modal-header {
   background: rgb(20, 21, 84);
 }

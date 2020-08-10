@@ -29,9 +29,13 @@ $(".carousel").carousel({
           $("#signup").modal("show");
         });
       });
-    </script>
 
-    <script>
+
+        {/* $("#nav-about").click(function (){
+          $("#nav-home").removeClass("active");
+          $("#nav-about").addClass("active");
+        }); */}
+
       $(document).ready(function () {
         $("#mycarousel").carousel({ interval: 2000 });
         $("#carouselButton").click(function () {
