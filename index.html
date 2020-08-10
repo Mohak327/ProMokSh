@@ -91,7 +91,6 @@
       </nav>
 
       <div id="loginModal" class="modal fade" role="dialog">
-
         <!--Custom login/signup, non responsive-->
         <!-- <br>
         <div class="row">
@@ -126,7 +125,7 @@
                 </div>
             </div>
         </div> -->
-        
+
         <div class="modal-dialog modal-lg" role="content">
           <div class="modal-content">
             <div class="modal-header">
@@ -220,24 +219,65 @@
             <div class="modal-body">
               <form>
                 <div class="card-body">
-  
+
                   <div class="form-group row">
                     <label class="col-12 col-md-3 col-form-label"
-                      ><strong>Section</strong>
+                      ><strong>Name</strong>
                     </label>
-                    <div class="col-6">
+                    <div class="col-6 col-md-4">
+                      <input
+                        
+                        class="form-control"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <input
+                        
+                        class="form-control"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="col-12 col-md-3 col-form-label"
+                      ><strong>Age</strong>
+                    </label>
+                    <div class="col-6 col-md-4">
+                      <input
+                        
+                        class="form-control"
+                        id="date"
+                        name="date"
+                        type="date"
+                        placeholder="Date"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="col-12 col-md-3 col-form-label"
+                      ><strong>Gender</strong>
+                    </label>
+                    
+                    <div class="col-12 offset-md-3">
                       <div
                         class="btn-group btn-group-toggle"
                         data-toggle="buttons"
                       >
-                        <label class="btn btn-success active">
+                        <label class="btn btn-primary">
                           <input
                             type="radio"
                             name="options"
                             id="option1"
                             autocomplete="off"
                           />
-                          Non-Smoking
+                          Male
                         </label>
                         <label class="btn btn-danger">
                           <input
@@ -247,32 +287,58 @@
                             autocomplete="off"
                             checked
                           />
-                          Smoking
+                          Female
                         </label>
+                        <label class="btn btn-info">
+                          <input
+                            type="radio"
+                            name="options"
+                            id="option3"
+                            autocomplete="off"
+                            checked
+                          />
+                          Others
+                        </label>
+                        
                       </div>
                     </div>
                   </div>
   
                   <div class="form-group row">
                     <label for="telnum" class="col-12 col-md-3 col-form-label"
-                      ><strong>Date and Time</strong>
+                      ><strong>Email</strong>
                     </label>
-                    <div class="col-7 col-md-5">
+                    <div class="col-12 col-md-8">
                       <input
-                        type="date"
+                        
                         class="form-control"
-                        id="date"
-                        name="date"
-                        placeholder="Date"
+                        id="email"
+                        name="email"
+                        placeholder="Email ID"
                       />
                     </div>
-                    <div class="col-5 col-md-3">
+                  </div>
+
+                    <div class="form-group row">
+                      <label for="telnum" class="col-12 col-md-3 col-form-label"
+                      ><strong>Password</strong>
+                    </label>
+                    <div class="col-6 col-md-4">
                       <input
-                        type="time"
+                        
                         class="form-control"
-                        id="time"
-                        name="time"
-                        placeholder="Time"
+                        id="password"
+                        name="password"
+                        placeholder="Create Password"
+                      />
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <input
+                        
+                        class="form-control"
+                        id="re-password"
+                        name="re-password"
+                        placeholder="Confirm Password"
                       />
                     </div>
                   </div>
@@ -284,8 +350,8 @@
                           Cancel
                         </a>
                       </button>
-                      <button type="submit" class="btn btn-primary">
-                        Book
+                      <button type="submit" class="btn btn-success">
+                        Sign Up
                       </button>
                     </div>
                   </div>
