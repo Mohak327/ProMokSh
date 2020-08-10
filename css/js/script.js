@@ -2,6 +2,11 @@
 new WOW().init();
 // Carousel options
 
+// Material Select Initialization for choosing country
+// $(document).ready(function() {
+//   $('.mdb-select').materialSelect();
+//   });
+
 $(".carousel").carousel({
   interval: 3000,
 });
