@@ -43,7 +43,8 @@ header,
 }
 
 .navbar-dark {
-  background-color: rgb(20, 21, 84);
+  background: rgb(20, 21, 84);
+  background-repeat: no-repeat;
 }
 
 /*  */
@@ -53,8 +54,16 @@ header,
   color: white;
 }
 
-footer {
-  background-color: rgb(20, 21, 84);
+footer,
+#best-features {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")
+      no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: white;
 }
 
@@ -92,7 +101,7 @@ footer .primary-color {
   color: white;
 }
 
-.login-box {
+/* .login-box {
   width: 100%;
   margin: auto;
   max-width: 525px;
@@ -102,7 +111,7 @@ footer .primary-color {
     no-repeat center;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 
 /* 
 .login-snip {
