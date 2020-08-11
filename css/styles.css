@@ -7,8 +7,9 @@ header,
 }
 
 #intro {
-  background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")
-    no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")
+      no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -22,11 +23,13 @@ header,
 
 .icon img {
   max-height: 40vh;
+  max-width: 80%;
 }
 
 .modal-header {
   background: rgb(20, 21, 84);
 }
+
 .modal-header .modal-title {
   color: white;
 }
@@ -43,8 +46,12 @@ header,
 }
 
 .navbar-dark {
-  background: rgb(20, 21, 84);
-  background-repeat: no-repeat;
+  /* background: rgb(20, 21, 84);
+  background-repeat: no-repeat; */
+
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")
+      no-repeat center center fixed;
 }
 
 /*  */
@@ -56,7 +63,7 @@ header,
 
 footer,
 #best-features {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")
       no-repeat center center fixed;
 
@@ -68,7 +75,7 @@ footer,
 }
 
 footer .primary-color {
-  background-color: rgb(127, 152, 221);
+  background-color: rgba(31, 85, 235, 0.205);
 }
 
 .links {
@@ -102,6 +109,21 @@ footer .primary-color {
 }
 
 .tabnavs {
+}
+
+.form-row a {
+  color: white;
+  font-size: smaller;
+  margin: auto 2px;
+}
+
+.btn-secondary a {
+  text-decoration: none;
+  color: white;
+}
+
+#option4 {
+  width: 210px;
 }
 
 /* 
@@ -289,18 +311,3 @@ a {
 ::placeholder {
   color: #b3b3b3;
 } */
-
-.form-row a {
-  color: white;
-  font-size: smaller;
-  margin: auto 2px;
-}
-
-.btn-secondary a {
-  text-decoration: none;
-  color: white;
-}
-
-#option4 {
-  width: 210px;
-}
