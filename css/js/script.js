@@ -37,16 +37,16 @@ $(".carousel").carousel({
         }); */}
 
       $(document).ready(function () {
-        $("#mycarousel").carousel({ interval: 2000 });
+        $("#carousel-example-1z").carousel({ interval: 2000 });
         $("#carouselButton").click(function () {
           if ($("#carouselButton").children("span").hasClass("fa-pause")) {
-            $("#mycarousel").carousel("pause");
+            $("#carousel-example-1z").carousel("pause");
             $("#carouselButton").children("span").removeClass("fa-pause");
             $("#carouselButton").children("span").addClass("fa-play");
           } else if (
             $("#carouselButton").children("span").hasClass("fa-play")
           ) {
-            $("#mycarousel").carousel("cycle");
+            $("#carousel-example-1z").carousel("cycle");
             $("#carouselButton").children("span").removeClass("fa-play");
             $("#carouselButton").children("span").addClass("fa-pause");
           }
